@@ -1,19 +1,6 @@
 package inheritance;
-class SubTest1{
-	String name,addr;
-	
-	public SubTest1() {
-		
-	}
-	public SubTest1(String name, String addr) {
-		this.name=name;
-		this.addr=addr;
-	}
-	public void view() {
-		System.out.println("이름은 "+name+"이고 사는 곳은 "+addr+"입니다.");
-	}
-}
- class SubTest extends SubTest1 {
+
+ class SubTest extends SuperTest {
 	int age;
 	double score;
 	
@@ -23,10 +10,10 @@ class SubTest1{
 		this.score=score;	
 	}
 		
-	
+@Override	
 	public String toString() {
-		super.view();
-		return "나이는 "+age+"세이고 점수는 "+score+"점입니다.";
+		
+		return super.toString()+"\n나이는 "+age+"세이고 점수는 "+score+"점입니다.";
 	}
 	public static void main(String[] args) {
 		SuperTest ob1=new SuperTest("뽀로로","대흥동");

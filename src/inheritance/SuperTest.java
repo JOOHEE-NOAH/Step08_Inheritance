@@ -1,8 +1,8 @@
 package inheritance;
 //持失切, 昔切 2鯵 持失切, toString()
 public class SuperTest {
- private String name;
- private String addr;
+ public String name;
+ public String addr;
 
   public SuperTest() {
 	  
