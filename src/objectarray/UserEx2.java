@@ -10,7 +10,7 @@ public class UserEx2 {
 		
 //	}
 	User [] ob=new User[3];
-	ob[0]= new  User("kim","010-222-1111");
+	ob[0]= new  User("kim","010-222-1111"); 
 	ob[1]= new  User("lee","010-222-1111");
 	ob[2]= new  User("park","010-333-1111");
 	//출력해주기	
@@ -18,7 +18,7 @@ public class UserEx2 {
 	for(int i=0; i<ob.length;i++)
 		System.out.println(ob[i].getName()+"\t"+ob[i].getPhone());
 	
-	//향상된 for문
+	//향상된 for문(잘 안 씀)
 	for (User x:ob)
 		System.out.println(x.getName()+"\t"+x.getPhone());
 
